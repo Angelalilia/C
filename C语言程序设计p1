@@ -1,0 +1,103 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+
+//基础框架
+
+/*  #include<stdio.h>//格式
+
+   int main()//输入
+   {
+    printf("hello world\n");//打印
+   system("pause");//显示
+	  return 0;//返回
+  }
+  */
+//注释单行//整段/*...*/或Ctrl+k+c注释Ctrl+k+u解除注释
+
+
+//char字符类型'W'字母 int数字150 float小数
+//%c打印字符格式的数据eg：'A'   %d打印整型十进制数据eg：20
+
+
+/*#include<stdio.h>
+
+int main ()
+{
+	char ch ='A';
+	printf("%c\n",ch);
+	system("pause");
+	return 0;
+}
+*/
+/*
+int main()
+{
+	int age = 20;//向内存申请空间
+	printf("%d\n",age);
+	system("pause");
+	return 0;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+//不同类型所占内存不同
+/*int main()
+{
+	printf("%d\n",sizeof(char));//1个字节
+
+	计算机中的单位
+	bit比特  只能放一个1或0
+	byte字节 1byte=8bit
+	kb      1kb=1024byte
+    mb      1mb=1024kb
+	gb      1gb=1024mb
+	tb      1tb=1024gb 
+	pb      1pb=1024tb
+
+	printf("%d\n",sizeof(short));//2
+	printf("%d\n",sizeof(long));//4
+	printf("%d\n",sizeof(long long));//8
+	printf("%d\n",sizeof(int));//4
+	printf("%d\n",sizeof(float));//4
+	printf("%d\n",sizeof(double));//8
+	system ("pause");
+	return 0;
+}
+*/
+/*
+
+#include<stdio.h>
+int main ()
+{
+	double weight = 95.5;
+	printf("%f\n",weight);
+	system("pause");
+	return 0;
+}
+*/
+
+
+//给出变量和加减运算
+#include<stdio.h>
+int main()
+{
+	int num1 = 0;
+	int num2 = 0;
+	int sum = 0;
+	printf("请输入俩个数值");
+	scanf("%d%d", &num1, &num2);//输入数值
+    sum = num1 + num2;
+	printf("sum = %d\n",sum);
+	system("pause");
+	return 0;
+}
