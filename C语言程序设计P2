@@ -1,0 +1,194 @@
+//const修饰的常变量
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	const int num1 =10;//const 是常属性的意思后续不能更改
+//	printf("%d\n",num1);
+//	system("pause");
+//	return 0;
+//}
+
+
+
+////#define定义的标识符常量
+//#include<stdio.h>
+//#include<stdlib.h>
+//#define MAX 10//定义MAX=10
+//int main()
+//{
+//	int arr[MAX] = {0};
+//	printf("%d\n",MAX);
+//	system("pause");
+//	return 0;
+//}
+
+
+//枚举常量：一一列举
+//枚举关键- enum
+//#include<stdio.h>
+//#include<stdlib.h>
+//enum Sex
+//{
+//	MALE,
+//	FEMALE,
+//	SECRET
+//};
+//int main()
+//{
+//	enum Sex sex = MALE;//enum使用方法
+//	printf("%d\n",MALE);//0枚举常量这个值不可改变
+//	printf("%d\n",FEMALE);//1
+//	printf("%d\n",SECRET);//2
+//	system("pause");
+//	return 0;
+//}
+
+
+
+//字符串
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main ()
+//{
+//	char arr1[]="abc";//数组
+//	char arr2[]={'a','b','c'};
+//	printf("%s\n",arr2);
+//	printf("%s\n",arr1);
+//	system("pause");
+//	return 0;
+//}
+
+
+
+
+//打印字符串长度
+//#include<stdlib.h>
+//#include<stdio.h>
+//#include<cstring>
+//int main()
+//{
+//	char arr1[]="abc";
+//	char arr2[]={'a','b','c'};
+//	printf("%d\n",strlen(arr1));
+//	printf("%d\n",strlen(arr2));
+//    system("pause");
+//	return 0;
+//}
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<cstring>
+//int main()
+//{
+//	printf("%d\n",strlen("c:\\test\32\\test.c"));
+//system("pause");
+//return 0;
+//}
+
+
+
+//if条件语句
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	int input = 0;
+//	printf("加入比特\n");
+//	printf("你要好好学习吗？(1/0):");
+//	scanf("%d",&input);
+//	if(input == 1)
+//	    printf("好offer\n");
+//	else
+//		printf("卖红薯\n");
+//	system("pause");
+//	return 0;
+//}
+
+
+
+//while循环语句
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<graphics.h>
+//int main()
+//{
+//	int line = 0;
+//	printf("加入比特\n");
+//	while(line<200)
+//	{
+//	printf("敲一行代码: %d\n",line);
+//	line++;
+//    }
+//	if(line>=200)
+//	printf("好offer\n");
+//	system("pause");
+//    return 0;
+//}
+
+
+
+//加减函数代码
+//#include<stdio.h>
+//#include<stdlib.h>
+//int Add(int x, int y)
+//{
+// int z = x+y;
+//return z;
+//}
+//int main()
+//{
+//	int num1 = 10;
+//	int num2 = 20;
+//	int sum = 0;
+//	sum = Add(num1,num2);
+//	printf("%d\n",sum);
+//    system("pause");
+//    return 0;
+//}
+
+
+
+//数组
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	int arr[]={1,2,3,5};
+//	printf("%d\n",arr[2]);
+//system("pause");
+//return 0;
+//}
+//用while表示一组连续数组
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	int arr[]={1,2,3,4,5,6,7,8,9,10};
+//	int i = 0;
+//	while(i<10)
+//	{
+//	printf("%d\n",arr[i]);
+//	i++;
+//	}
+//	
+//system("pause");
+//return 0;
+//}
+
+
+
+计算数组中元素个数
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int arr[10] ={0};
+	int sz = 0;
+	printf("%d\n",sizeof(arr));
+	//个数=数组总大小/每个元素的大小
+	//sizeof计算的是变量/类型所占空间的大小，单位是字节
+	sz = sizeof(arr)/sizeof(arr[10]);
+    printf("%d\n",sz);
+system("pause");
+return 0;
+}
