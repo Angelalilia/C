@@ -1,0 +1,100 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+//define#定义常量和宏
+//#define定义的标识符常量（eg:MAX=100）
+//#include<stdio.h>
+//#include<stdlib.h>
+//#define MAX 100//定义MAX = 100
+//int main()
+//{
+//	int a = MAX;
+//	printf("%d\n",a);
+//system("pause");
+//return 0;
+//}
+
+//define定义宏--宏：带参数
+
+//#include<stdio.h>
+//#include<stdlib.h>
+////eg:比较俩数大小
+////函数表达方式
+//int Max(int x, int y)//定义函数方式
+//{
+//    if(x>y)
+//	    return x;
+//	else
+//		return y;
+//}
+////宏的定义
+//#define MAX(x,y) (x>y?x:y)//定义MAX(x,y)=(x>y?x:y)
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//
+//	int max = Max(a,b);
+//	printf("max = %d\n",max);//函数表达方式
+//	max = MAX(a,b);//MAX(a,b)=(a>b?a:b)
+//    printf("max = %d\n",max);//宏的表示方式	
+//system("pause");
+//return 0;
+//}
+
+
+//地址，指针变量*p
+//#include<stdio.h>
+//#include<stdlib.h>
+////int指针类型
+//int main()
+//{
+//	int a = 10;//申请4个字节的空间
+//	//&取地址符号
+//	int* p = &a;//有一种变量是用来存放地址的-->指针变量
+//	printf("%p\n",p);
+//	printf("%p\n",&a);//%p是打印地址标志
+//	*p = 20;//* --> 解引用操作符
+//	printf("a = %d\n",a);//通过*p找到它所存放的a，=20改变a的值
+//system("pause");
+//return 0;
+//}
+
+
+//char指针类型
+/*#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+char ch = 'w';
+char* pc = &ch;
+printf("%d\n",sizeof(pc));//计算大小
+*pc = 'a';
+printf("%c\n",ch);//打印字符用%c
+system("pause");
+return 0;
+}*/
+//+=2；先加2再等于
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<string.h>
+////创建一个Book类型结构体框架
+//struct Book
+//{
+//	char name[20];//C语言程序设计
+//	short price;//55
+//};//;表示创建结构体结束
+////创建一个Book类型的具体结构体
+//int main()
+//{
+//	struct Book b1 ={"C语言程序设计",55};
+//	strcpy(b1.name,"C++");//strcpy-string copy - 字符串拷贝 - 库函数 - string.h
+//	printf("%s\n",b1.name);//改变结构体名字
+//	//printf("书名：%s\n",b1.name);//.name表示从结构体中找到name
+//	//printf("价格：%d元\n",b1.price);
+//	//struct Book* abp=&b1;
+//	//printf("%s\n",abp->name);//从abp中找到name
+//	//printf("%s\n",(*abp).name);//从abp中找到name
+//	//printf("%d\n",(*abp).price);
+//    system("pause");
+//    return 0;
+//}
