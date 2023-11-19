@@ -1,0 +1,48 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+//强制类型转换（函数类型）
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//	int a = (int)3.14;
+//	printf("%d\n",a);
+//    system("pause");
+//    return 0;
+//}
+
+
+
+//关键字typedef类型名字重定义
+//将unsigned重命名为u_int
+//typedef unsigned int u_int
+
+
+
+
+
+
+
+
+//关键字void
+//#include<stdio.h>
+//#include<stdlib.h>
+//
+// void test()
+//{
+//	//int a = 1;//每次进来都是1，2 2 2 2 2
+//	static int a = 1; //每次进来保留上次数据，2 3 4 5 6
+//	a++; 
+//	printf("a = %d\n",a);
+//}
+//
+//int main()
+//{
+//	int i = 0;
+//	while(i<5)
+//	{
+//		test();
+//		i++;
+//	}
+//	system("pause");
+//    return 0;
+//}
