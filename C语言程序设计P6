@@ -1,1 +1,81 @@
 
+#define _CRT_SECURE_NO_WARNINGS 1
+
+//break在while循环中的作用（终止符，跳出循环）
+//在循环中只要遇见break，就停止后期的所有的循环，直接终止循环。
+//while中的break是用于永久终止循环的
+
+
+//continue在while循环中的作用
+//continue是用于终止本次循环的，也就是本次循环中continue后边的代码不会再执行
+//而是直接跳转到while语句的判断部分。进行下一次循环的入口判断。
+
+
+
+
+//getchar && putchar
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	//当遇见ctrl+z循环结束
+	int ch = 0;
+	while ((ch = getchar()) != EOF)//getchar字符输入函数
+		//当getchar输入字符不等于EOF进入下一步
+		//EOF - end of file 文件结束标志--> -1
+		putchar(ch);//输出并打印字符
+	printf("%c\n",ch);
+system("pause");
+return 0;
+}
+
+
+
+//getchar && putchar (eg:输入密码)
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int ch = 0;
+	int ret = 0;
+	char password[20] = {0};
+	printf("请输入密码:");
+	scanf("%s",password);
+	printf("请确认密码（Y/N）");
+	//getchar();//读取输入的回车\n，清空缓冲区
+	//getchar只能读取一个字符
+	while(ch = getchar() != '\n')//当输入多个时用while循环
+	{
+		;
+	}
+	ret = getchar();
+	if(ret == 'Y')
+	{
+	printf("确认成功\n");
+	}
+	else
+		printf("放弃确认\n");
+	system("pause");
+    return 0;
+}
+
+
+//for循环
+//不可在for循环体内修改循环变量，防止for循环失去控制
+//建议for语句的循环控制变量的取值采用“前闭后开区间”写法
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i = 0;
+	//10次循环，10次打印，i从0开始
+	for(i=1;i<=10;i++)
+		//格式for( 初始化 ; 判断 ; 调整 )
+	{
+	printf("%d\n",i);
+	}
+	system("pause");
+    return 0;
+}
+
