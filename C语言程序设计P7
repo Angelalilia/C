@@ -1,1 +1,133 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+//for循环代码块变种练习1
 
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i = 0;
+	int j = 0;
+	for( ;i<10;i++)
+	{
+		for( ;j<10;j++)//for循环可以嵌套
+		{
+		printf("hehe\n");
+		}
+	}
+system("pause");
+return 0;
+}
+
+
+//for循环代码块变种练习2
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int x, y;
+	for(x = 0 ,y = 0; x<2 && y<5; ++x, y++)//++x与x++相同
+	{
+	printf("hehe\n");
+	}
+	system("pause");
+return 0;
+}
+
+
+//for循环练习3
+//请问循环了几次？
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i = 0;
+	int k = 0;
+	for(i = 0, k = 0;k=0; i++,k++)//k=0,k的值是0为假循环不进行
+		k++;
+	system("pause");
+return 0;
+}
+//循环0次
+
+
+//2do while循环
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	//打印1-10
+	int i = 1;
+	do
+	{
+	printf("%d ",i);
+	i++;
+	}
+	while(i<=10);
+	system("pause");
+return 0;
+}
+
+
+
+//循环练习
+//计算n的阶乘
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i = 0;
+	int n = 0;
+	int ret = 1;
+	scanf("%d",&n);
+	for(i = 1;i<=n;i++)
+	{
+		ret = ret * i;
+	}
+	printf("ret = %d\n",ret);
+system("pause");
+return 0;
+}
+
+
+//计算1！+2！+...+10！
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i = 0;
+	int ret = 1;
+	int sum = 0;
+	int n = 0;
+	for(n=1;n<=4;n++)
+	{
+	  ret = 1;
+	  for(i=1;i<=n;i++)
+	  {
+	    ret = ret * i;
+	  }
+	sum = sum + ret;
+	}
+	printf("sum=%d\n",sum);
+	system("pause");
+return 0;
+}
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i = 0;
+	int ret = 1;
+	int sum = 0;
+	int n = 0;
+	for(n=1;n<=10;n++)
+	{
+	    ret = ret * n;
+		sum = sum + ret;
+	}
+	printf("sum=%d\n",sum);
+	system("pause");
+return 0;
+}
